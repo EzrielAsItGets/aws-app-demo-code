@@ -1,8 +1,8 @@
 module.exports = {
-  HOST: "myapp-mysqldb-use1.cysjtc0l6kjf.us-east-1.rds.amazonaws.com",
-  USER: "username",
-  PASSWORD: "2ivr3)CX<Dl*$$exa29lqyN~ErHM",
-  DB: "myappmysql",
+  HOST: process.env.HOST,
+  USER: process.env.USER,
+  PASSWORD: process.env.PASSWORD,
+  DB: process.env.DBNAME,
   dialect: "mysql",
   pool: {
     max: 5,
