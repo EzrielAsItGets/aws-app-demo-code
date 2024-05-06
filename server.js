@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
+//const cors = require("cors");
 
 const path = __dirname + '/app/views/';
 
@@ -8,13 +8,13 @@ const app = express();
 
 app.use(express.static(path));
 
-var corsOptions = {
+/* var corsOptions = {
   origin: "http://localhost:8081"
-};
+}; */
 
 //app.use(cors(corsOptions));
-app.use(cors());
-app.options('*', cors());
+//app.use(cors());
+//app.options('*', cors());
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
